@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/users/{name?}', function ($name = null) {
     $message = "";
     if ($name != null) {
-        $message = 'Hi user ' . $name;
+        $message = 'Hi user ' . $name . ". Welkom terug!";
     } else { {
             $message = 'Hi unknown user';
         }
