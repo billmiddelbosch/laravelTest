@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4127c5d499da4e53c5cf7ea36684a76b2e6fd633',
+        'reference' => '07635e40e5959532dc81868a08c8c23a0e448053',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -385,6 +385,15 @@
                 0 => 'v9.47.0',
             ),
         ),
+        'inertiajs/inertia-laravel' => array(
+            'pretty_version' => 'v0.6.8',
+            'version' => '0.6.8.0',
+            'reference' => 'c07625de0c1ba4d12d07e4063c56d813ef4a8e4c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../inertiajs/inertia-laravel',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -403,7 +412,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4127c5d499da4e53c5cf7ea36684a76b2e6fd633',
+            'reference' => '07635e40e5959532dc81868a08c8c23a0e448053',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
