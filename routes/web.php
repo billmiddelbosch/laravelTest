@@ -7,6 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\HttpController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\uploadController;
+use App\Http\Controllers\userTableController;
 use App\Http\Controllers\woningdbController;
 use Illuminate\Support\Facades\Route;
 
@@ -64,6 +66,11 @@ Route::get('test-blade', function () {
     return view('testblade');
 });
 
-Route::get('test-layout', function () {
+Route::get('/test-layout', function () {
     return view('testlayout');
 });
+
+Route::get('/users', [userTableController::class, 'getAllusers'])->name('users-getallusers');
+
+Route::get('/upload', [uploadController::class, 'upload'])->name('upload-upload');
+Route::post('/upload', [uploadController::class, 'uploadPOST'])->name('upload-uploadpost');
