@@ -5,7 +5,8 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.1:al2'
-        database: aanbod
+        database: prdAanbod
+        database-user: bit_academy
         build:
             - 'composer install --no-dev'
             - 'php artisan event:cache'
